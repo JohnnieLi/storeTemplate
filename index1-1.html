@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+
+<!--https://www.wix.com/website-template/view/html/1622/?siteId=617a4e3f-9a32-4a4a-bbdc-1a90cc261ed2&metaSiteId=43b6090c-0233-4fb7-bbc2-9d588da80ca5&originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fonline-store%2Ffashion-clothing-->
+
+<html>
+	<head>
+	<title>Test</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="css1.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<style>
+		.whiteText {
+			color: beige !important;
+		}
+		
+		.fontSize-20 {
+			font-size: 20px;
+		}
+		
+		.fontSize-40 {
+			font-size: 40px;
+		}
+		
+		.category {
+			margin-left: 150px;
+		}
+		
+		.margin {
+			margin-left: 80px;
+		}
+		
+		.navbar {
+			min-height: 80px;
+			background-color: rgba(83, 81, 81, 1);
+			border-top: 0px solid rgba(83, 81, 81, 1);
+			border-bottom: 0px solid rgba(83, 81, 81, 1);
+			color: beige !important;
+		}
+		
+		.navbar-brand {
+			padding: 0 15px;
+			height: 80px;
+			line-height: 80px;
+		}
+		
+		.navbar-toggle {
+			/* (80px - button height 34px) / 2 = 23px */
+			margin-top: 23px;
+			padding: 9px 10px !important;
+		}
+		
+		@media (min-width: 768px) {
+			.navbar-nav>li>a {
+				/* (80px - line-height of 27px) / 2 = 26.5px */
+				padding-top: 26.5px;
+				padding-bottom: 26.5px;
+				line-height: 27px;
+			}
+		}
+		
+		.content-main {
+			height: 200vh;
+			margin-top: 100px;
+		}
+		
+		.fh5co-bg {
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			position: relative;
+		}
+		
+		.fh5co-bg {
+			background-size: cover;
+			background-position: center center;
+			position: relative;
+			width: 100%;
+			float: left;
+		}
+		
+		.fh5co-bg .overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.5);
+			-webkit-transition: 0.5s;
+			-o-transition: 0.5s;
+			transition: 0.5s;
+		}
+		
+		.fh5co-bg-section {
+			background: rgba(0, 0, 0, 0.05);
+		}
+		
+		#fh5co-footer {
+			padding: 1em 0;
+			clear: both;
+		}
+		
+		@media screen and (max-width: 768px) {
+			#fh5co-footer {
+				padding: 3em 0;
+			}
+		}
+		
+		#fh5co-footer {
+			position: relative;
+		}
+		
+		#fh5co-footer .overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.9);
+			-webkit-transition: 0.5s;
+			-o-transition: 0.5s;
+			transition: 0.5s;
+		}
+		
+		#fh5co-footer h3 {
+			margin-bottom: 15px;
+			font-weight: bold;
+			font-size: 15px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: rgba(255, 255, 255, 0.8);
+		}
+		
+		#fh5co-footer p {
+			color: rgba(255, 255, 255, 0.5);
+			text-decoration: none;
+		}
+		
+		#fh5co-footer .fh5co-footer-links {
+			padding: 0;
+			margin: 0;
+		}
+		
+		#fh5co-footer .fh5co-footer-links li {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		
+		#fh5co-footer .fh5co-footer-links li a {
+			color: rgba(255, 255, 255, 0.5);
+			text-decoration: none;
+		}
+		
+		#fh5co-footer .fh5co-footer-links li a:hover {
+			text-decoration: underline;
+		}
+		
+		#fh5co-footer .fh5co-widget {
+			margin-bottom: 30px;
+		}
+		
+		@media screen and (max-width: 768px) {
+			#fh5co-footer .fh5co-widget {
+				text-align: left;
+			}
+		}
+		
+		#fh5co-footer .fh5co-widget h3 {
+			margin-bottom: 15px;
+			font-weight: bold;
+			font-size: 15px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+		
+		#fh5co-footer .copyright .block {
+			display: block;
+		}
+		
+		.btn-primary {
+			background: #F85A16;
+			color: #fff;
+			border: 2px solid #F85A16;
+		}
+		
+		.btn-primary:hover,
+		.btn-primary:focus,
+		.btn-primary:active {
+			background: #f96c2f !important;
+			border-color: #f96c2f !important;
+		}
+		
+		.btn-primary.btn-outline {
+			background: transparent;
+			color: #F85A16;
+			border: 1px solid #F85A16;
+		}
+		
+		.btn-primary.btn-outline:hover,
+		.btn-primary.btn-outline:focus,
+		.btn-primary.btn-outline:active {
+			background: #F85A16;
+			color: #fff;
+		}
+		
+
+		
+		@media screen and (min-width: 480px) {
+			img {		
+				width: 100vw;
+				height: 601px;
+				object-fit: cover
+			}
+			
+			.info{
+				left: 30vw; 
+				width: 546px;
+				position: absolute; 
+				top: 320px; 
+				height: 181px;
+			}
+		}
+		
+		.imageScape {
+			height: 601px;
+			width: 100%;
+		}
+		
+	</style>
+
+	<nav class="nav navbar fixed-top navbar-expand-lg">
+		<a class="navbar-brand whiteText fontSize-40" href="#">Navbar w/ text</a>
+		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+		<div class="collapse navbar-collapse category" id="navbarText">
+			<ul class="navbar-nav mr-auto fontSize-20">
+				<li class="nav-item active margin">
+					<a class="nav-link whiteText" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item margin">
+					<a class="nav-link whiteText" href="#">Features</a>
+				</li>
+				<li class="nav-item margin">
+					<a class="nav-link whiteText" href="#">Pricing</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+
+
+	<!--	 home page -->
+	<div class="content-main">
+
+		<div class="row">
+			<div class="imageScape">
+				<img id="mediaiwf4mtg3balatamediacontentimage" alt="" data-type="image" src="https://static.wixstatic.com/media/84770f_b5b78cd83b6342199b7370a2ba6b9e06.jpg/v1/fill/w_1372,h_601,al_c,q_85,usm_0.66_1.00_0.01/84770f_b5b78cd83b6342199b7370a2ba6b9e06.webp">
+				<div class="c2" id="i2epz4bn" class="info">
+					<div id="i2epz4bnbg" class="c2bg"></div>
+					<div id="i2epz4bninlineContent" class="c2inlineContent">
+						<div data-packed="true" class="txtNew" id="i2epz4bn_0" style="left: 29px; width: 490px; position: absolute; top: 25px;">
+							<h3 style="text-align:center;" class="font_3"><span style="letter-spacing:0.02em;"><span style="font-weight:bold;">FALL &amp; WINTER</span></span>
+							</h3>
+						</div>
+						<div id="i2epz4bn_1" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="212" data-height="40" class="b1" data-state="desktop shouldUseFlex center" style="left: 168px; position: absolute; top: 104px; height: 40px; min-height: 25px; width: 212px;"><a href="https://www.wix.com/demone2/womens-fashion/shop" target="_self" role="button" id="i2epz4bn_1link" class="g-transparent-a b1link"><span id="i2epz4bn_1label" class="b1label">Shop Now</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+	<footer id="fh5co-footer" class="fh5co-bg" role="contentinfo">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-4 fh5co-widget">
+					<h3>A Little About Stamina.</h3>
+					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+					<p><a class="btn btn-primary" href="#">Become A Member</a></p>
+				</div>
+				<div class="col-md-8">
+					<h3>Classes</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Cardio</a></li>
+						<li><a href="#">Body Building</a></li>
+						<li><a href="#">Yoga</a></li>
+						<li><a href="#">Boxing</a></li>
+						<li><a href="#">Running</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2017 | All Rights Reserved.</small>
+						<small class="block">Powered by  siteName.com</small>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
